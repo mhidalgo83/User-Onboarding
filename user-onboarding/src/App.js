@@ -1,13 +1,17 @@
 import React from "react";
 import "./App.css";
 import Form from "./components/Form";
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+margin: 5% 0;
+`
 
 function App() {
   return (
-    <div className="App">
-      App
+    <Wrapper className="App">
       <Form />
-    </div>
+    </Wrapper>
   );
 }
 
