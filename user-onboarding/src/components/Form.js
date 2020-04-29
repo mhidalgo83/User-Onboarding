@@ -3,7 +3,7 @@ import styled from "styled-components";
 import * as yup from "yup";
 import axios from "axios";
 
-const Wrapper = styled.div``;
+const Wrapper = styled.form``;
 
 const Error = styled.p`
   font-size: 0.8rem;
@@ -83,6 +83,7 @@ const Form = () => {
     axios
       .post("https://reqres.in/api/users", formState)
       .then((res) => {
+        console.log(res);
         setPost(res.data);
         setFormState({
           name: "",
