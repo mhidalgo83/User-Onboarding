@@ -68,6 +68,7 @@ const Form = () => {
   });
 
   const inputChange = (e) => {
+    setPost();
     e.persist();
     const newFormData = {
       ...formState,
